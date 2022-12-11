@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkFragment">
+
+    <LinearLayout
+        android:id="@+id/about_me_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/customborder"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Work Experience"
+            android:textAllCaps="true"
+            android:textColor="#FF5252"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/zuraas"
+            android:layout_width="250dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_about_title"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@color/blue" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/sorenson_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/sorenson_logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/title_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Senior AWS DevOps Engineer"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_sorenson"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sorenson Communication"
+                        android:textColor="@color/darkblue"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nov 2022 - Present"
+                        android:textColor="@color/darkgray"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/tv_maharishi_master"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Salt Lake, Utah"
+                        android:textColor="@color/darkgray" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/zuraas"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/orange" />
+
+            <TableRow>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/shutis_logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/shutis_logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_shutis_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mongolian University of Science and Technology"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_shutis_bachelor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bachelor of Information Technology"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</FrameLayout>

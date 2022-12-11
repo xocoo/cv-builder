@@ -4,4 +4,18 @@
     <string name="whatsapp">Whatsapp</string>
     <string name="xocoome">Xocoo.me</string>
     <string name="contact">Contact</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_me">About me</string>
+    <string name="work">Work</string>
+    <string name="copyright">Khosbayar Sandag © 2022</string>
+    <string name="khosbayar_sandag">Khosbayar Sandag</string>
+    <string name="devops_engineer">DevOps engineer</string>
+    <string name="sorenson_communication">Sorenson</string>
+    <string name="my_intro">Highly motivated DevOps and Software engineer with 5 years of hands-on experience, working on start-up and enterprise systems. Specialized in back-end development and deployment, CI/CD, Docker, Kubernetes, Linux, and AWS, and worked in the IT industry for more than 10 years.</string>
+    <string name="location">Location</string>
+    <string name="aws_cert"><a href="https://www.credly.com/badges/1647d4cb-8bf5-4fe8-ad28-5c69eacda570/public_url">AWS Certified Developer - Associate</a></string>
+    <string name="oci_cert"><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=9AC1465C227C54B74466BB68D4A71976C76D0707E0F51A1AE23BC8EF6A098DC6">Oracle Cloud Infrastructure 2021 Architect Professional</a></string>
+    <string name="aboutme">Khosbayar Sandag, DevOps engineer from Mongolia. I am currently studying for Masters in Computer Science at Maharishi International University. I\'m an ambitious, flexible team member who loves to learn; computer savvy. I like traveling, photography, hiking, and learning new things about technology.</string>
 </resources>
