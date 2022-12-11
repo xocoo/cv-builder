@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/linkedin"
+        android:icon="@drawable/linkedin_logo"
+        android:title="@string/linkedin"
+        app:showAsAction="ifRoom|withText"></item>
+    <item
+        android:id="@+id/whatsapp"
+        android:icon="@drawable/whatsapp_logo"
+        android:title="@string/whatsapp"
+        app:showAsAction="ifRoom"></item>
+    <item
+        android:id="@+id/web"
+        android:icon="@drawable/logo"
+        android:title="@string/xocoome"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/contact"
+        android:icon="@drawable/ic_baseline_email_24"
+        android:title="@string/contact"
+        app:showAsAction="never">
+
+    </item>
+</menu>
