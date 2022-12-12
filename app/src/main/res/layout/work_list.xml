@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/work_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/company_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/tv_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Role"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Compnay name"
+                    android:textColor="@color/darkblue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_work_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="@color/darkgray"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_company_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textColor="@color/darkgray" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/zuraas"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/orange" />
+
+        <!--        <TableRow>-->
+
+        <!--            <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                android:id="@+id/sorenson_image"-->
+        <!--                android:layout_width="50dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_gravity="center_horizontal"-->
+        <!--                android:layout_marginTop="35dp"-->
+        <!--                android:src="@drawable/sorenson_logo" />-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="vertical"-->
+        <!--                android:paddingLeft="20dp">-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/title_label"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Senior AWS DevOps Engineer"-->
+        <!--                    android:textAllCaps="true"-->
+        <!--                    android:textStyle="bold" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/tv_sorenson"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Sorenson Communication"-->
+        <!--                    android:textColor="@color/darkblue"-->
+        <!--                    android:textStyle="bold" />-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Nov 2022 - Present"-->
+        <!--                    android:textColor="@color/darkgray"-->
+        <!--                    android:textStyle="italic" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/tv_maharishi_master"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Salt Lake, Utah"-->
+        <!--                    android:textColor="@color/darkgray" />-->
+        <!--            </LinearLayout>-->
+
+        <!--        </TableRow>-->
+    </TableLayout>
+
+</RelativeLayout>
