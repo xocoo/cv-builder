@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".ContactFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:id="@+id/contact_section"
@@ -40,7 +40,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <TableRow android:padding="10dp">
+                <TableRow
+                    android:id="@+id/tr_phone"
+                    android:padding="10dp">
 
                     <ImageView
                         android:layout_width="36dp"
@@ -51,21 +53,18 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="call"
                         android:orientation="vertical"
                         android:paddingLeft="20dp">
 
                         <TextView
-
                             android:id="@+id/tv_phone"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="+1(641)233-0095"
                             android:textAllCaps="true"
                             android:textStyle="bold" />
 
                         <TextView
-
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Mobile"
@@ -74,7 +73,9 @@
 
                 </TableRow>
 
-                <TableRow android:padding="10dp">
+                <TableRow
+                    android:id="@+id/tr_email"
+                    android:padding="10dp">
 
                     <ImageView
                         android:layout_width="36dp"
@@ -83,13 +84,14 @@
                         app:tint="@color/darkblue" />
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:paddingLeft="20dp">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_email"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="hello@xocoo.me"
                             android:textStyle="bold" />
@@ -103,7 +105,9 @@
 
                 </TableRow>
 
-                <TableRow android:padding="10dp">
+                <TableRow
+                    android:id="@+id/tr_location"
+                    android:padding="10dp">
 
                     <ImageView
                         android:layout_width="36dp"
@@ -118,7 +122,8 @@
                         android:paddingLeft="20dp">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_location"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Chicago, IL"
                             android:textStyle="bold" />
@@ -163,6 +168,7 @@
                 android:background="@color/blue" />
 
             <TableLayout
+                android:id="@+id/tr_facebook"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -181,14 +187,14 @@
 
                         <TextView
 
-                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_facebook"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="ホス ビーアヤル"
                             android:textAllCaps="true"
                             android:textStyle="bold" />
 
                         <TextView
-
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Facebook"
@@ -197,7 +203,9 @@
 
                 </TableRow>
 
-                <TableRow android:padding="10dp">
+                <TableRow
+                    android:id="@+id/tr_linkedin"
+                    android:padding="10dp">
 
                     <ImageView
                         android:layout_width="36dp"
@@ -205,8 +213,8 @@
                         android:src="@drawable/linkedin_logo" />
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:paddingLeft="20dp">
 
@@ -218,14 +226,16 @@
 
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:text="LinkedIn"
                             android:textStyle="italic" />
                     </LinearLayout>
 
                 </TableRow>
 
-                <TableRow android:padding="10dp">
+                <TableRow
+                    android:id="@+id/tr_whatsapp"
+                    android:padding="10dp">
 
                     <ImageView
                         android:layout_width="36dp"
@@ -239,7 +249,7 @@
                         android:paddingLeft="20dp">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="+1(641)233-0095"
                             android:textStyle="bold" />
