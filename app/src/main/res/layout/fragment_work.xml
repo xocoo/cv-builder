@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -42,42 +43,113 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
-        <!--        <LinearLayout-->
-        <!--            android:id="@+id/skill_section"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_below="@+id/work_experience_section"-->
-        <!--            android:layout_margin="20dp"-->
-        <!--            android:background="@drawable/customborder"-->
-        <!--            android:orientation="vertical">-->
+        <LinearLayout
+            android:id="@+id/skill_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/work_experience_section"
+            android:layout_margin="20dp"
+            android:background="@drawable/customborder"
+            android:orientation="vertical">
 
-        <!--            <TextView-->
-        <!--                android:id="@+id/tv_skill"-->
-        <!--                android:layout_width="wrap_content"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:layout_gravity="center_horizontal"-->
-        <!--                android:text="Skill"-->
-        <!--                android:textAllCaps="true"-->
-        <!--                android:textColor="#FF5252"-->
-        <!--                android:textSize="24sp"-->
-        <!--                android:textStyle="bold" />-->
+            <TextView
+                android:id="@+id/tv_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Skill"
+                android:textAllCaps="true"
+                android:textColor="#FF5252"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-        <!--            <View-->
-        <!--                android:layout_width="250dp"-->
-        <!--                android:layout_height="2dp"-->
-        <!--                android:layout_below="@+id/tv_skill"-->
-        <!--                android:layout_gravity="center_horizontal"-->
-        <!--                android:layout_marginBottom="20dp"-->
-        <!--                android:background="@color/blue" />-->
+            <View
+                android:layout_width="250dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tv_skill"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="@color/blue" />
 
-        <!--            <ListView-->
-        <!--                android:id="@+id/lv_skill"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content">-->
+            <ListView
+                android:id="@+id/lv_skill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <!--            </ListView>-->
+            </ListView>
 
 
-        <!--        </LinearLayout>-->
+        </LinearLayout>
+
+        <!-- Floating action button for add alarm -->
+        <!-- Make sure that you are constraining this
+             button to the parent button -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_baseline_add_circle_24"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_alarm_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toTopOf="@+id/add_fab"
+                app:layout_constraintEnd_toEndOf="@+id/add_fab"
+                app:layout_constraintStart_toStartOf="@+id/add_fab"
+                app:srcCompat="@drawable/ic_baseline_diamond_24" />
+
+            <!-- Action name text for the add alarm button -->
+            <!-- Make sure that you are constraining this Text to
+                 the add Alarm FAB button -->
+            <TextView
+                android:id="@+id/add_alarm_action_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Skill"
+                app:layout_constraintBottom_toBottomOf="@+id/add_alarm_fab"
+                app:layout_constraintEnd_toStartOf="@+id/add_alarm_fab"
+                app:layout_constraintTop_toTopOf="@+id/add_alarm_fab" />
+
+            <!-- Floating action button for add person -->
+            <!-- Make sure that you are constraining this
+                 button to the add Alarm FAB button -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_person_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toTopOf="@+id/add_alarm_fab"
+                app:layout_constraintEnd_toEndOf="@+id/add_alarm_fab"
+                app:layout_constraintStart_toStartOf="@+id/add_alarm_fab"
+                app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+            <!-- Action name text for the add person button -->
+            <!-- Make sure that you are constraining this Text
+                 to the add Person FAB button -->
+            <TextView
+                android:id="@+id/add_person_action_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Project"
+                app:layout_constraintBottom_toBottomOf="@+id/add_person_fab"
+                app:layout_constraintEnd_toStartOf="@+id/add_person_fab"
+                app:layout_constraintTop_toTopOf="@+id/add_person_fab" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </RelativeLayout>
 </FrameLayout>
