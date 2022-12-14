@@ -16,9 +16,17 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val prf = getSharedPreferences("user_details", MODE_PRIVATE);
+        Toast.makeText(
+            applicationContext,
+            "Hello, " + prf.getString("username", null),
+            Toast.LENGTH_SHORT
+        ).show()
 
         val adapter = MenuAdapter(supportFragmentManager, lifecycle)
         viewpager.adapter = adapter
@@ -110,6 +118,15 @@ class MainActivity : AppCompatActivity() {
                     //get and show exception message
                     Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
                 }
+            }
+
+            R.id.logout -> {
+                val prf = getSharedPreferences("user_details", MODE_PRIVATE);
+                intent = Intent(this@MainActivity, Login::class.java)
+                val editor = prf.edit()
+                editor.clear()
+                editor.commit()
+                startActivity(intent)
             }
         }
 
